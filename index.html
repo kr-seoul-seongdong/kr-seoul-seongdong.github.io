@@ -117,35 +117,295 @@
   ]
 }
   </script>
-  <style>
-:root { --fg:#1a1a2e; --muted:#5c5c72; --accent:#2d5bff; --bg:#ffffff; --card:#f6f7fb; --line:#e6e8f0; }
-* { box-sizing: border-box; }
-body { margin:0; font-family: -apple-system, BlinkMacSystemFont, "Apple SD Gothic Neo", "Malgun Gothic", sans-serif; color:var(--fg); background:var(--bg); line-height:1.7; }
-main { max-width: 760px; margin: 0 auto; padding: 2rem 1.25rem 4rem; }
-header { padding: 2rem 0 1rem; border-bottom: 2px solid var(--line); margin-bottom: 1.5rem; }
-.eyebrow { color: var(--accent); font-weight: 600; margin: 0 0 .25rem; letter-spacing: .02em; }
-h1 { font-size: 2.4rem; margin: 0; }
-h2 { font-size: 1.25rem; margin: 2rem 0 .5rem; padding-left: .6rem; border-left: 4px solid var(--accent); }
-section p { margin: .25rem 0 0; }
-ul { margin: .5rem 0 0; padding-left: 1.2rem; }
-li { margin: .25rem 0; }
-.facts, .symbols { list-style: none; padding: 1rem 1.2rem; background: var(--card); border-radius: 12px; }
-.faq details { border: 1px solid var(--line); border-radius: 10px; padding: .5rem .9rem; margin: .5rem 0; }
-.faq summary { cursor: pointer; font-weight: 600; }
-.faq details p { margin: .5rem 0 .25rem; color: var(--muted); }
-.sources { font-size: .9rem; color: var(--muted); }
-a { color: var(--accent); }
-footer { margin-top: 3rem; padding-top: 1rem; border-top: 1px solid var(--line); color: var(--muted); font-size: .85rem; }
-</style>
+  <script id="region-data" type="application/json">
+{
+  "characteristics": "성동구의 인구는 2025년 기준 약 27만 명으로, 서울 자치구 가운데 중소 규모에 속하지만 인구밀도가 높고 젊은 세대의 유입이 활발한 편입니다. 산업 구조가 뚜렷한 것이 특징으로, 성수동 일대에는 약 2.17㎢ 규모의 준공업지역이 지정되어 있어 서울에서 보기 드물게 생산 기능과 주거·상업이 공존합니다. 과거 수제화 산업의 중심지였던 성수동은 여전히 국내 최대 규모의 수제화 클러스터를 유지하는 동시에, 낡은 공장을 개조한 소셜벤처와 IT 스타트업, 문화 공간이 집적해 '한국의 브루클린'이라 불리기도 합니다. 마장동에는 서울 육류 유통의 상당 부분을 담당하는 대규모 축산물시장이, 용답동에는 중고자동차 매매단지가 형성되어 특화 상권을 이룹니다. 금호동·옥수동·행당동 일대는 한강 조망을 갖춘 대단지 아파트가 밀집한 주거 중심지로, 재개발을 통해 도시 경관이 크게 바뀌었습니다. 생산·유통·주거·창업 문화가 한 구 안에 촘촘히 얽혀 있다는 점이 성동구를 다른 강북 자치구와 구별 짓는 성격입니다.",
+  "coords": {
+    "lat": 37.5634,
+    "lng": 127.0369
+  },
+  "cultural_heritage": [
+    {
+      "description": "보물 제1738호로 지정된 조선시대 돌다리로, 세종 대에 착공해 성종 대에 완공되었으며 현존하는 조선시대 돌다리 가운데 가장 깁니다. 청계천과 중랑천이 만나 한강으로 흘러드는 살곶이벌에 놓여 도성과 광나루를 잇던 교통로였습니다.",
+      "name": "살곶이다리(전곶교)"
+    },
+    {
+      "description": "서울숲 입구에 약 100개의 컨테이너로 조성한 복합 문화·상생 공간으로, 사회적 약자의 자립을 돕는다는 취지를 담고 있습니다. 청년·다문화·소셜벤처를 위한 상점과 공방, 전시 공간이 어우러진 성동구의 대표 문화 플랫폼입니다.",
+      "name": "언더스탠드에비뉴"
+    },
+    {
+      "description": "뚝도수원지 제1정수장은 우리나라 최초의 근대식 상수도 정수시설로 20세기 초 서울의 급수를 담당했습니다. 서울숲 조성 과정에서 산업 유산으로 보존되어 근대 수도 역사를 전하는 문화시설로 활용되고 있습니다.",
+      "name": "뚝섬 정수장(수도박물관 관련 유산)"
+    },
+    {
+      "description": "매년 3~4월 개나리 개화 시기에 맞춰 응봉산 팔각정 일대에서 열리는 성동구의 대표 봄 축제입니다. 백일장·그림그리기·콘서트 등 문화예술 프로그램이 어우러져 '서울에서 봄이 가장 먼저 오는 축제'로 불립니다.",
+      "name": "응봉산 개나리 축제"
+    }
+  ],
+  "faq": [
+    {
+      "answer": "성동구청은 서울특별시 성동구 고산자로 270(행당동)에 위치합니다. 지하철 왕십리역과 가까워 2·5호선, 경의·중앙선, 수인·분당선으로 접근하기 편리합니다.",
+      "question": "성동구청은 어디에 있나요?"
+    },
+    {
+      "answer": "성수동은 과거 수제화 공장과 인쇄소가 밀집한 준공업지대였으나, 오래된 공장을 개조한 카페·편집숍·갤러리와 스타트업이 모여들면서 서울의 대표적 트렌드 명소로 변모했습니다. 국내 최대 수제화 클러스터가 여전히 유지되는 것도 특징입니다.",
+      "question": "성수동이 유명한 이유는 무엇인가요?"
+    },
+    {
+      "answer": "수인·분당선 서울숲역이나 2호선 뚝섬역에서 걸어서 접근할 수 있습니다. 공원 입구에 언더스탠드에비뉴가 있어 함께 둘러보기 좋습니다.",
+      "question": "서울숲은 어떻게 가나요?"
+    },
+    {
+      "answer": "보통 3월 말에서 4월 초 개나리가 만개하며, 이 시기에 맞춰 응봉산 개나리 축제가 열립니다. 정상 팔각정에서 노란 개나리와 한강 전망을 함께 즐길 수 있습니다.",
+      "question": "응봉산 개나리는 언제 볼 수 있나요?"
+    },
+    {
+      "answer": "성동구의 구화는 개나리, 구목은 느티나무, 구조는 참매입니다. 특히 개나리는 응봉산 개나리 축제로 이어지는 성동구의 상징 꽃입니다.",
+      "question": "성동구를 대표하는 상징(구화·구목·구조)은 무엇인가요?"
+    },
+    {
+      "answer": "국내 최대 규모의 축산물 전문시장으로 신선한 정육을 저렴하게 구입할 수 있고, 인근 식당에서 구입한 고기를 즉석에서 구워 먹을 수도 있습니다. 서울 시내 육류 유통에서 큰 비중을 차지하는 곳입니다.",
+      "question": "마장동 축산물시장에서는 무엇을 할 수 있나요?"
+    }
+  ],
+  "geography_nature": "성동구는 서울 동부에 위치하며 면적은 약 16.85㎢로, 북쪽으로 동대문구, 동쪽으로 광진구, 서쪽으로 중구·종로구·용산구와 접하고 남쪽은 한강을 경계로 강남구·서초구와 마주합니다. 지형은 대체로 낮고 평탄하나 응봉산·대현산 등 야트막한 구릉이 곳곳에 솟아 있으며, 특히 응봉산은 해발 약 95m로 한강과 도심을 한눈에 조망하는 전망 명소로 유명합니다. 구의 남쪽 경계를 따라 한강이 흐르고, 동쪽에서는 중랑천이 내려와 응봉동 부근에서 한강에 합류하며, 서북쪽 왕십리 일대로는 청계천이 흘러듭니다. 이처럼 성동구는 한강·중랑천·청계천 등 총 14km가 넘는 수변을 끼고 있어 물의 도시라 불릴 만큼 하천 환경이 풍부합니다. 한강 변에는 서울숲과 뚝섬한강공원이 이어져 있어 도심 속 대규모 녹지축을 형성합니다. 하천과 구릉, 강변 녹지가 어우러진 지형은 성동구의 자연환경을 규정하는 핵심 요소입니다.",
+  "history": "성동구는 1943년 6월 10일 경성부에 구제(區制)가 시행되면서 처음 설치되었고, 1946년 서울특별자유시로, 1949년 서울특별시 성동구로 정착했습니다. 광복 이후 성동구는 지금보다 훨씬 넓어, 오늘날의 강남구·서초구·송파구·강동구와 광진구 일대를 모두 포함하는 거대한 행정구역이었습니다. 1975년 한강 이남 지역이 강남구로 분리되고, 1995년에는 중곡동·구의동 등 동부 지역이 광진구로 분구되면서 현재의 규모로 축소되었습니다. 왕십리는 조선시대 도성과 살곶이벌을 잇는 교통과 목축의 요지였고, 뚝섬 일대는 임금의 사냥터이자 군마를 기르던 곳으로 이용되었습니다. 근대에는 성수동을 중심으로 수제화·인쇄·금속 가공 공장이 들어서며 서울의 대표적 준공업지대로 성장했습니다. 2005년 뚝섬 경마장·정수장 터에 서울숲이 조성되면서 산업 도시에서 친환경 도시로의 전환을 상징하는 계기가 마련되었습니다.",
+  "intro": "성동구는 서울특별시 동부에 자리한 자치구로, 한강 북쪽의 왕십리·성수 일대를 아우르는 지역입니다. 예로부터 도성 동쪽 관문이자 강남과 강북을 잇는 길목이었으며, 오늘날에는 성수동을 중심으로 한 도시 재생과 산업 전환으로 서울에서 가장 빠르게 변모하는 지역 중 하나로 꼽힙니다. 옛 수제화 공장과 인쇄소가 밀집했던 준공업지대가 개성 있는 카페와 편집숍, 스타트업 오피스로 탈바꿈하면서 젊은 층이 즐겨 찾는 명소가 되었습니다. 구의 중앙에는 서울숲이라는 대규모 도시공원이 있어 산업적 활력과 녹지 휴식이 공존하는 독특한 성격을 지닙니다. 구청은 행당동 고산자로 270에 있으며, 왕십리역을 축으로 여러 지하철 노선이 교차해 접근성이 매우 뛰어납니다. 성동구는 전통과 첨단, 생산과 여가가 한데 어우러진 서울 동부의 관문 도시입니다.",
+  "landmarks": [
+    {
+      "description": "옛 뚝섬 경마장과 정수장 부지에 2005년 조성된 약 116만㎡ 규모의 대형 도시공원으로, 문화예술공원·생태숲·습지생태원 등 다섯 개 테마로 구성됩니다. 봄이면 벚꽃과 튤립, 사슴 방사장으로 유명해 성동구를 대표하는 나들이 명소입니다.",
+      "name": "서울숲"
+    },
+    {
+      "description": "과거 수제화 공장과 인쇄소가 밀집했던 골목이 붉은 벽돌 건물을 개조한 개성 있는 카페와 편집숍, 갤러리로 재탄생한 거리입니다. 도시 재생의 대표 사례로 꼽히며 국내외 방문객이 즐겨 찾는 트렌드 중심지입니다.",
+      "name": "성수동 카페거리"
+    },
+    {
+      "description": "해발 약 95m의 야트막한 산으로 정상 팔각정에서 한강과 성수대교, 도심 야경을 파노라마로 조망할 수 있습니다. 봄철 약 20만 그루의 개나리가 산 전체를 노랗게 물들여 '개나리 동산'으로 불립니다.",
+      "name": "응봉산"
+    },
+    {
+      "description": "1960년대에 형성된 국내 최대 규모의 축산물 전문시장으로, 서울 시내 육류 유통의 상당 부분을 담당합니다. 신선하고 저렴한 정육을 구입해 즉석에서 구워 먹을 수 있어 미식가들이 찾는 명소입니다.",
+      "name": "마장동 축산물시장"
+    }
+  ],
+  "nature_rest": [
+    {
+      "description": "한강과 맞닿은 대규모 도시공원으로 넓은 잔디밭과 산책로, 사슴 방사장, 곤충식물원 등을 갖추어 사계절 시민 휴식처로 사랑받습니다. 인근 중랑천·응봉산·뚝섬한강공원과 이어져 도심 속 거대한 녹지축을 형성합니다.",
+      "name": "서울숲"
+    },
+    {
+      "description": "한강 변을 따라 조성된 대표적인 한강공원으로 수영장·자전거도로·수변 무대와 캠핑장 등을 갖추고 있습니다. 서울숲과 보행교로 연결되어 강변 산책과 여가를 함께 즐기기 좋은 열린 공간입니다.",
+      "name": "뚝섬한강공원"
+    },
+    {
+      "description": "응봉산 일대를 근린공원으로 조성해 어린이공원과 암벽등반장, 배드민턴장 등 체육시설을 갖추었습니다. 정상에서 바라보는 한강 일몰과 야경이 뛰어나 사진 촬영과 산책 명소로 인기가 높습니다.",
+      "name": "응봉산 근린공원"
+    },
+    {
+      "description": "동대문구에서 내려온 중랑천이 응봉동에서 한강과 합류하는 구간을 따라 자전거도로와 수변 산책로가 잘 정비되어 있습니다. 봄철 벚꽃길과 억새, 철새 도래지로 알려져 도심 속 자연을 가까이 느낄 수 있습니다.",
+      "name": "중랑천 산책로"
+    }
+  ],
+  "org_slug": "kr-seoul-seongdong",
+  "sido": "서울특별시",
+  "sigungu": "성동구",
+  "symbols": {
+    "bird": "참매",
+    "flower": "개나리",
+    "tree": "느티나무"
+  },
+  "transport": "성동구는 왕십리역을 중심으로 지하철 노선이 촘촘하게 교차하는 교통 요충지입니다. 왕십리역에서는 서울 지하철 2호선, 5호선, 경의·중앙선, 수인·분당선이 만나 네 개 노선이 환승되는 서울 동부의 대표 환승 거점 역할을 합니다. 이 밖에 3호선(금호·옥수역), 2호선 성수지선(성수·용답역), 경의·중앙선 응봉역 등이 구 곳곳을 지나 지하철 접근성이 매우 뛰어납니다. 성수동은 2호선 성수역과 뚝섬역을 중심으로 상권이 발달해 주말이면 방문객으로 붐빕니다. 도로 교통 면에서는 한강을 건너는 성수대교와 동호대교가 강남과 직결되고, 내부순환로와 강변북로, 고산자로·왕십리로 등 간선도로가 도심 및 외곽으로의 이동을 뒷받침합니다. 서울숲과 응봉역 인근에서는 한강 자전거도로와 연결되어 친환경 이동도 편리합니다."
+}
+  </script>
 </head>
 <body>
-  <main>
-    <header>
-      <p class="eyebrow">서울특별시</p>
-      <h1>성동구</h1>
-    </header>
-    <div class="content">
-      <section id="intro">
+<style>
+  :root{
+    --sd-red:#CB4154;
+    --sd-olive:#556B2F;
+    --sd-blk:#000000;
+    --sd-teal:#0b8a7a;
+    --sd-desk:#008080;
+  }
+  #sd-os *{box-sizing:border-box;}
+  #sd-os{
+    font-family:"Rix Video Game","릭스 비디오게임",ui-monospace,"Courier New",Courier,monospace;
+    color:#000;background:#c7c7c7;border:2px solid var(--sd-blk);
+    margin:0;padding:0;line-height:1.5;-webkit-font-smoothing:none;
+  }
+  #sd-os h1,#sd-os h2,#sd-os h3,#sd-os p,#sd-os li,#sd-os summary{
+    font-family:inherit;
+  }
+  /* ---- TOP BOOT BAR ---- */
+  #sd-menubar{
+    display:flex;align-items:center;gap:0;
+    background:var(--sd-blk);color:#fff;border-bottom:2px solid var(--sd-blk);
+    padding:0;font-size:13px;
+  }
+  #sd-menubar .sd-brand{
+    background:var(--sd-red);color:#fff;padding:6px 12px;font-weight:bold;
+    border-right:2px solid var(--sd-blk);letter-spacing:1px;text-transform:uppercase;
+  }
+  #sd-menubar .sd-mi{padding:6px 12px;border-right:2px solid #333;white-space:nowrap;}
+  #sd-menubar .sd-clock{margin-left:auto;background:var(--sd-olive);padding:6px 12px;border-left:2px solid var(--sd-blk);}
+  /* ---- DESKTOP AREA ---- */
+  #sd-desktop{
+    position:relative;background:var(--sd-desk);
+    background-image:
+      linear-gradient(45deg,#0a6b6b 25%,transparent 25%),
+      linear-gradient(-45deg,#0a6b6b 25%,transparent 25%),
+      linear-gradient(45deg,transparent 75%,#0a6b6b 75%),
+      linear-gradient(-45deg,transparent 75%,#0a6b6b 75%);
+    background-size:20px 20px;background-position:0 0,0 10px,10px -10px,-10px 0;
+    min-height:560px;padding:16px;overflow:hidden;
+  }
+  #sd-desktop .sd-heroline{
+    background:#fff;border:2px solid var(--sd-blk);padding:8px 12px;
+    display:inline-block;max-width:100%;
+    box-shadow:6px 6px 0 var(--sd-blk);
+  }
+  #sd-desktop .sd-heroline b{color:var(--sd-red);}
+  /* ---- ICON GRID ---- */
+  #sd-icons{
+    display:grid;grid-template-columns:repeat(auto-fill,92px);
+    gap:14px 10px;margin-top:16px;
+  }
+  .sd-icon{
+    width:92px;text-align:center;cursor:pointer;user-select:none;
+    padding:6px 4px;border:2px solid transparent;
+  }
+  .sd-icon:hover,.sd-icon:focus{border:2px dashed #fff;outline:none;}
+  .sd-icon .sd-glyph{
+    width:56px;height:56px;margin:0 auto 6px;
+    background:#fff;border:2px solid var(--sd-blk);
+    display:flex;align-items:center;justify-content:center;font-size:26px;
+    box-shadow:3px 3px 0 var(--sd-blk);
+  }
+  .sd-icon .sd-glyph.r{background:var(--sd-red);color:#fff;}
+  .sd-icon .sd-glyph.o{background:var(--sd-olive);color:#fff;}
+  .sd-icon .sd-label{
+    color:#fff;font-size:11px;line-height:1.2;
+    background:rgba(0,0,0,.55);padding:2px 3px;display:inline-block;
+    word-break:keep-all;
+  }
+  /* ---- WINDOWS ---- */
+  .sd-win{
+    position:absolute;min-width:280px;max-width:min(560px,92%);
+    background:#e8e8e8;border:2px solid var(--sd-blk);
+    box-shadow:8px 8px 0 var(--sd-blk);z-index:5;
+    display:flex;flex-direction:column;
+  }
+  .sd-win.sd-front{z-index:50;}
+  .sd-titlebar{
+    display:flex;align-items:center;gap:8px;
+    background:var(--sd-red);color:#fff;padding:5px 8px;
+    border-bottom:2px solid var(--sd-blk);cursor:grab;font-size:12px;
+    text-transform:uppercase;letter-spacing:1px;
+  }
+  .sd-titlebar.grabbing{cursor:grabbing;}
+  .sd-titlebar .sd-t-txt{flex:1;font-weight:bold;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;}
+  .sd-titlebar .sd-btn{
+    width:18px;height:18px;background:#fff;color:#000;border:2px solid var(--sd-blk);
+    font-size:12px;line-height:14px;text-align:center;cursor:pointer;font-weight:bold;
+    padding:0;
+  }
+  .sd-titlebar .sd-btn:hover{background:var(--sd-olive);color:#fff;}
+  .sd-winbody{
+    padding:14px 16px;overflow:auto;max-height:360px;background:#f4f4f4;
+    font-size:14px;
+  }
+  .sd-winbody h2{font-size:15px;margin:0 0 10px;color:var(--sd-olive);border-bottom:2px solid var(--sd-blk);padding-bottom:4px;text-transform:uppercase;}
+  .sd-winbody h3{font-size:13px;margin:14px 0 6px;color:var(--sd-red);}
+  .sd-winbody p{margin:0 0 10px;}
+  /* content styling shared (also JS-off) */
+  #sd-content section{
+    background:#fff;border:2px solid var(--sd-blk);padding:14px 16px;margin:0 0 14px;
+  }
+  #sd-content section h2{
+    font-size:16px;margin:0 0 10px;color:#fff;background:var(--sd-red);
+    display:inline-block;padding:4px 10px;border:2px solid var(--sd-blk);
+    text-transform:uppercase;
+  }
+  #sd-content section h3{color:var(--sd-olive);font-size:14px;margin:12px 0 6px;}
+  #sd-content .facts,#sd-content .symbols{
+    display:grid;grid-template-columns:repeat(auto-fit,minmax(160px,1fr));gap:0;
+    border:2px solid var(--sd-blk);
+  }
+  #sd-content .facts>*,#sd-content .symbols>*{
+    border:1px solid var(--sd-blk);padding:8px 10px;background:#f4f4f4;font-size:13px;
+  }
+  #sd-content .faq details{
+    border:2px solid var(--sd-blk);margin:0 0 8px;background:#f4f4f4;
+  }
+  #sd-content .faq summary{
+    cursor:pointer;padding:8px 10px;background:var(--sd-olive);color:#fff;
+    font-weight:bold;list-style:none;
+  }
+  #sd-content .faq summary::-webkit-details-marker{display:none;}
+  #sd-content .faq summary::before{content:"[+] ";}
+  #sd-content .faq details[open] summary::before{content:"[-] ";}
+  #sd-content .faq details>*:not(summary){padding:8px 10px;}
+  #sd-content ul{padding-left:20px;margin:0 0 10px;}
+  #sd-content a{color:var(--sd-red);text-decoration:underline;word-break:break-all;}
+  /* ---- BOOT NOTICE (JS-off fallback framing) ---- */
+  #sd-jsoff-note{
+    background:var(--sd-olive);color:#fff;border:2px solid var(--sd-blk);
+    padding:10px 14px;margin:14px 0;font-size:13px;
+  }
+  #sd-content.sd-live>section{display:none;}
+  #sd-taskbar{
+    display:flex;gap:6px;align-items:center;flex-wrap:wrap;
+    background:var(--sd-blk);border-top:2px solid var(--sd-blk);padding:6px 8px;min-height:36px;
+  }
+  #sd-taskbar .sd-start{
+    background:var(--sd-red);color:#fff;border:2px solid #fff;padding:4px 12px;
+    font-weight:bold;font-size:12px;cursor:pointer;text-transform:uppercase;
+  }
+  .sd-taskitem{
+    background:#c7c7c7;color:#000;border:2px solid #fff;padding:4px 10px;font-size:12px;
+    cursor:pointer;max-width:160px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;
+  }
+  .sd-taskitem.on{background:var(--sd-olive);color:#fff;}
+  @media (max-width:640px){
+    .sd-win{position:relative!important;left:0!important;top:0!important;width:100%!important;max-width:100%!important;margin-bottom:14px;box-shadow:5px 5px 0 var(--sd-blk);}
+    #sd-desktop{min-height:auto;}
+  }
+</style>
+
+<div id="sd-os">
+
+  <div id="sd-menubar">
+    <span class="sd-brand">■ 성동_OS</span>
+    <span class="sd-mi">파일</span>
+    <span class="sd-mi">보기</span>
+    <span class="sd-mi">성동구</span>
+    <span class="sd-clock" id="sd-clock">SEONGDONG.SYS</span>
+  </div>
+
+  <div id="sd-desktop">
+    <div class="sd-heroline">
+      <div style="font-size:12px;letter-spacing:2px;color:var(--sd-olive);">C:\서울특별시\성동구&gt; run.exe</div>
+      <div style="font-size:18px;font-weight:bold;margin-top:4px;">성동구 지역 정보 · 서울특별시</div>
+      <div style="font-size:11px;margin-top:2px;">아이콘을 <b>더블클릭</b>하면 창이 열립니다 · 제목표시줄을 잡고 드래그하세요</div>
+    </div>
+
+    <div id="sd-icons" role="list"><!-- icons injected by JS --></div>
+  </div>
+
+  <div id="sd-taskbar">
+    <span class="sd-start" id="sd-start">▲ 시작</span>
+    <div id="sd-tasklist" style="display:flex;gap:6px;flex-wrap:wrap;"></div>
+  </div>
+
+  <div id="sd-jsoff-note">
+    본 페이지는 &lt;성동_OS&gt; 데스크톱 시뮬레이터입니다. 자바스크립트가 켜지면
+    아이콘을 더블클릭해 드래그 가능한 창으로 각 정보를 볼 수 있습니다.
+    아래는 성동구 전체 정보 원문입니다.
+  </div>
+
+  <div id="sd-content">
+          <section id="intro">
         <h2>지역 소개</h2>
         <p>성동구는 서울특별시 동부에 자리한 자치구로, 한강 북쪽의 왕십리·성수 일대를 아우르는 지역입니다. 예로부터 도성 동쪽 관문이자 강남과 강북을 잇는 길목이었으며, 오늘날에는 성수동을 중심으로 한 도시 재생과 산업 전환으로 서울에서 가장 빠르게 변모하는 지역 중 하나로 꼽힙니다. 옛 수제화 공장과 인쇄소가 밀집했던 준공업지대가 개성 있는 카페와 편집숍, 스타트업 오피스로 탈바꿈하면서 젊은 층이 즐겨 찾는 명소가 되었습니다. 구의 중앙에는 서울숲이라는 대규모 도시공원이 있어 산업적 활력과 녹지 휴식이 공존하는 독특한 성격을 지닙니다. 구청은 행당동 고산자로 270에 있으며, 왕십리역을 축으로 여러 지하철 노선이 교차해 접근성이 매우 뛰어납니다. 성동구는 전통과 첨단, 생산과 여가가 한데 어우러진 서울 동부의 관문 도시입니다.</p>
       </section>
@@ -253,10 +513,181 @@ footer { margin-top: 3rem; padding-top: 1rem; border-top: 1px solid var(--line);
           <li><a href="https://www.sd.go.kr/tour/contents.do?key=1915" rel="noopener">응봉산 개나리 축제 - 성동구 문화관광</a> (조회 2026-07-08)</li>
         </ul>
       </section>
-    </div>
-    <footer>
-      <p>이 페이지는 공개 자료를 바탕으로 작성된 성동구 지역 정보 페이지입니다.</p>
-    </footer>
-  </main>
+  </div>
+
+</div>
+
+<script id="region-data" type="application/json">{"note":"populated_by_generator"}</script>
+
+<script>
+(function(){
+  var os=document.getElementById('sd-os');
+  if(!os) return;
+  var content=document.getElementById('sd-content');
+  var desktop=document.getElementById('sd-desktop');
+  var iconWrap=document.getElementById('sd-icons');
+  var tasklist=document.getElementById('sd-tasklist');
+  var note=document.getElementById('sd-jsoff-note');
+
+  /* clock */
+  var clk=document.getElementById('sd-clock');
+  function tick(){
+    var d=new Date();
+    function p(n){return (n<10?'0':'')+n;}
+    if(clk) clk.textContent='SEONGDONG '+p(d.getHours())+':'+p(d.getMinutes())+':'+p(d.getSeconds());
+  }
+  tick(); setInterval(tick,1000);
+
+  var sections=Array.prototype.slice.call(content.querySelectorAll('section'));
+  if(!sections.length) return;
+
+  /* JS is live: hide raw sections, drive them through windows */
+  content.classList.add('sd-live');
+  if(note) note.style.display='none';
+
+  var GLYPHS={
+    intro:'★',facts:'▤',history:'⌛',geography:'▲',characteristics:'◆',
+    landmarks:'⌂',heritage:'♜',nature:'♣',transport:'▶',symbols:'✿',
+    faq:'?',links:'↗',sources:'≡'
+  };
+  var TONE={
+    intro:'r',history:'',geography:'o',characteristics:'r',landmarks:'o',
+    heritage:'r',nature:'o',transport:'r',symbols:'o',faq:'',links:'',facts:'o',sources:''
+  };
+
+  var z=10;
+  var openWins={};
+
+  function labelFor(sec){
+    var h=sec.querySelector('h2');
+    return h?h.textContent.trim():sec.id;
+  }
+
+  function bringFront(win){
+    document.querySelectorAll('.sd-win').forEach(function(w){w.classList.remove('sd-front');});
+    win.classList.add('sd-front');
+    win.style.zIndex=(++z);
+    Object.keys(openWins).forEach(function(k){
+      var ti=openWins[k].task; if(ti) ti.classList.remove('on');
+    });
+    var self=openWins[win.dataset.sid];
+    if(self&&self.task) self.task.classList.add('on');
+  }
+
+  function makeWindow(sec,idx){
+    var id=sec.id;
+    if(openWins[id]){ bringFront(openWins[id].win); return; }
+
+    var win=document.createElement('div');
+    win.className='sd-win';
+    win.dataset.sid=id;
+    var offset=(Object.keys(openWins).length*26)+20;
+    win.style.left=Math.min(offset+idx*4,220)+'px';
+    win.style.top=(offset+90)+'px';
+
+    var bar=document.createElement('div');
+    bar.className='sd-titlebar';
+    bar.innerHTML='<span class="sd-t-txt">'+ (GLYPHS[id]||'▤') +' '+ labelFor(sec) +'</span>';
+    var btn=document.createElement('button');
+    btn.className='sd-btn';btn.type='button';btn.textContent='×';
+    btn.setAttribute('aria-label','창 닫기');
+    bar.appendChild(btn);
+
+    var body=document.createElement('div');
+    body.className='sd-winbody';
+    /* clone the real section content so SEO source stays intact */
+    var clone=sec.cloneNode(true);
+    clone.style.display='';
+    body.appendChild(clone);
+
+    win.appendChild(bar);
+    win.appendChild(body);
+    desktop.appendChild(win);
+
+    /* taskbar item */
+    var ti=document.createElement('span');
+    ti.className='sd-taskitem';
+    ti.textContent=labelFor(sec);
+    ti.title=labelFor(sec);
+    tasklist.appendChild(ti);
+    ti.addEventListener('click',function(){ bringFront(win); });
+
+    openWins[id]={win:win,task:ti};
+
+    btn.addEventListener('click',function(e){
+      e.stopPropagation();
+      win.remove(); ti.remove(); delete openWins[id];
+    });
+
+    win.addEventListener('mousedown',function(){ bringFront(win); });
+
+    /* drag */
+    var dragging=false,sx,sy,ox,oy;
+    function down(e){
+      if(e.target===btn) return;
+      dragging=true; bar.classList.add('grabbing');
+      var pt=e.touches?e.touches[0]:e;
+      sx=pt.clientX; sy=pt.clientY;
+      ox=win.offsetLeft; oy=win.offsetTop;
+      bringFront(win);
+      e.preventDefault();
+    }
+    function move(e){
+      if(!dragging) return;
+      var pt=e.touches?e.touches[0]:e;
+      var nx=ox+(pt.clientX-sx);
+      var ny=oy+(pt.clientY-sy);
+      var maxX=desktop.clientWidth-40, maxY=desktop.clientHeight-30;
+      win.style.left=Math.max(-40,Math.min(nx,maxX))+'px';
+      win.style.top=Math.max(0,Math.min(ny,maxY))+'px';
+    }
+    function up(){ dragging=false; bar.classList.remove('grabbing'); }
+    bar.addEventListener('mousedown',down);
+    document.addEventListener('mousemove',move);
+    document.addEventListener('mouseup',up);
+    bar.addEventListener('touchstart',down,{passive:false});
+    document.addEventListener('touchmove',move,{passive:false});
+    document.addEventListener('touchend',up);
+
+    bringFront(win);
+  }
+
+  /* build desktop icons from sections */
+  sections.forEach(function(sec,idx){
+    var ic=document.createElement('div');
+    ic.className='sd-icon';ic.setAttribute('role','listitem');
+    ic.setAttribute('tabindex','0');
+    var tone=TONE[sec.id]||'';
+    ic.innerHTML='<div class="sd-glyph '+tone+'">'+(GLYPHS[sec.id]||'▤')+'</div>'+
+                 '<div class="sd-label">'+labelFor(sec)+'</div>';
+    iconWrap.appendChild(ic);
+    ic.addEventListener('dblclick',function(){ makeWindow(sec,idx); });
+    ic.addEventListener('keydown',function(e){
+      if(e.key==='Enter'||e.key===' '){ e.preventDefault(); makeWindow(sec,idx); }
+    });
+    /* single tap on touch opens too */
+    var last=0;
+    ic.addEventListener('click',function(){
+      var now=Date.now();
+      if('ontouchstart' in window || now-last<400){ makeWindow(sec,idx); }
+      last=now;
+    });
+  });
+
+  /* start button opens the intro / lists windows */
+  var startBtn=document.getElementById('sd-start');
+  startBtn.addEventListener('click',function(){
+    var intro=content.querySelector('#intro')||sections[0];
+    var idx=sections.indexOf(intro);
+    makeWindow(intro,idx<0?0:idx);
+  });
+
+  /* auto-open intro window on load as a friendly boot */
+  setTimeout(function(){
+    var intro=content.querySelector('#intro')||sections[0];
+    makeWindow(intro,sections.indexOf(intro));
+  },350);
+})();
+</script>
 </body>
 </html>
